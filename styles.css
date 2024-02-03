@@ -1,0 +1,165 @@
+﻿body {
+    background-color: #674BB0;
+    font-size: 24px;
+    text-align: center; 
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 3840px;
+    margin: 100px auto; 
+    overflow: hidden;
+    display: flex; 
+    align-items: center; 
+    flex: 1;
+    min-height: 100vh;
+    position: relative;
+}
+
+.column1,
+.column2 {
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.column1 {
+    width: 80%; 
+    text-align: left; 
+}
+
+.logo img {
+    display: block;
+    margin-bottom: 200px; 
+    width: 20%; 
+}
+
+.mockups img {
+    display: block;
+    width: 90%;
+}
+
+.column2 {
+    width: 30%; 
+    text-align: left; 
+    margin-left: auto; 
+}
+
+footer {
+    text-align: center;
+    padding: 1em;
+}
+
+.header {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: white;
+    width: 100%;
+}
+
+
+.summary {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    color: white;
+    width: 100%;
+}
+
+.button {
+    display: inline-block;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    color: #605096;
+    background-color: white;
+    text-align: center;
+    border: 2px solid #ffffff;
+    border-radius: 30px;
+    outline: none;
+    appearance: none;
+    padding: 15px 30px;
+    width: 200px;
+    cursor: pointer;
+}
+
+.social-media {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-top: 20px;
+    margin-left: 50px;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+.social-media img {
+    width: 50px;
+    height: auto;
+    margin-right: 20px;
+    filter: brightness(0) invert(1);
+}
+
+footer {
+    font-family: 'Poppins', sans-serif;
+}
+
+@media only screen and (min-width: 769px) {
+    body {
+        background-image: url('bg-desktop.svg'); 
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+}
+
+
+@media only screen and (max-width: 1028px) {
+    body {
+        background-image: url('bg-mobile.svg');
+        background-size: 100%;
+        background-position: center top;
+        background-repeat: no-repeat;
+    }
+
+    .container {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .column2 {
+        margin-left: 0; 
+        text-align: center;
+        width: 80%;
+    }
+
+    .summary {
+        margin-left: 35px;
+        text-align: center;
+        width: 95%;
+    }
+
+    .mockups img {
+        margin-right: 0;
+        width: 100%;
+    }
+
+    .logo {
+        width: 200%;
+    }
+
+    .button {
+        width: 600px;
+        margin-top: 20px;
+        padding: 30px 60px;
+        font-size: 30px;
+        border-radius: 50px;
+    }
+
+    .social-media {
+        position: static;
+        justify-content: center; 
+        margin-left: 0; 
+        align-items: center;
+    }
+}
